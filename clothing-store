@@ -1,0 +1,22 @@
+--Create a clothing store database
+
+CREATE TABLE clothing (id integer primary key, clothing_type text, quantity integer, color text, price integer);
+INSERT INTO clothing VALUES
+(1, "Shirts", 10, "black", 10),
+(2, "Pants", 5, "red", 25),
+(3, "Hats", 35, "brown", 14),
+(4, "Belts", 20, "black", 25),
+(5, "Shoes", 300, "white", 50),
+(6, "Socks", 20, "purple", 8),
+(7, "Bras", 58, "beige", 30),
+(8, "Underwear", 28, "red", 13),
+(9, "Dresses", 56, "yellow", 99),
+(10, "Skirts", 33, "green", 57),
+(11, "Suits", 66, "gray", 199),
+(12, "Sunglasses", 34, "black", 45),
+(13, "Watches", 44, "blue", 30),
+(14, "Earrings", 89, "silver", 34),
+(15, "Necklaces", 23, "gold", 55);
+
+--display the database ordered by price, but only include clothing items that had more than 20 in stock. 
+SELECT * FROM clothing where quantity > 20 ORDER BY price; 
