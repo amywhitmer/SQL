@@ -1,0 +1,27 @@
+/* Create table about the people and what they do here */
+CREATE TABLE movie_stars (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
+
+INSERT INTO movie_stars VALUES
+(1, 'George Clooney', 60),
+(2, 'Julia Roberts', 50),
+(3, 'Brad Pitt', 62),
+(4, 'Matt Damon', 51);
+
+CREATE TABLE movies (id INTEGER PRIMARY KEY, movie_name TEXT, year_made INTEGER);
+
+INSERT INTO movies VALUES
+(1, 'Oceans 11', 1998),
+(2, 'Pretty Woman', 1988),
+(3, 'Benjamin Buttons', 1989),
+(4, 'Jason Bourne', 2005),
+(5, 'Oceans 12', 2003);
+
+CREATE TABLE awards (id INTEGER PRIMARY KEY, award TEXT);
+
+INSERT INTO awards VALUES
+(1, 'Oscar'),
+(2, 'Emmy'),
+(3, 'Peoples_Choice'),
+(4, 'VMA');
+
+/* what movies did they star in? */
